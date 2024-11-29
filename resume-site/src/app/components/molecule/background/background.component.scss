@@ -1,0 +1,145 @@
+@keyframes rising-sky {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1100px);
+        opacity: 0;
+    }
+    
+}
+
+@keyframes rising-stars {
+    0%{
+        transform: translateY(0);
+    }
+    95% {
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200px);
+        opacity: 0;
+    }
+    
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(34, 34, 59, 1);
+    overflow: hidden;
+}
+
+.star::after,
+.star::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\2726";
+    font-size: 12rem;
+}
+
+.star {
+    position: absolute;
+    list-style: none;
+    bottom:-120px;
+    animation: rising-stars 32s linear infinite;
+    opacity: 1;
+}
+
+.star::after {
+    background: linear-gradient(135deg, rgba(201, 173, 167,1) 20%, rgb(236, 221, 137) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.star::before {
+    color: transparent;
+    text-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+}
+
+.cloud {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width:350px;
+    height:120px;
+    bottom:-200px;
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    animation: rising-sky 32s linear infinite;
+}
+
+.cloud:after, .cloud:before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+
+.cloud::after{
+    width:100px;
+    height:100px;
+    top:-120px;
+    left:-125px;
+}
+.cloud::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
+
+.background li:nth-child(1) {
+    left: 12%;
+    animation-delay: 0s;
+}
+.background li:nth-child(2) {
+    left: 2%;
+    animation-delay: 8s;
+}
+.background li:nth-child(3) {
+    left: 12%;
+    animation-delay: 16s;
+}
+.background li:nth-child(4) {
+    left: 2%;
+    animation-delay: 24s;
+}
+
+
+.background li:nth-child(5) {
+    left: 69%;
+    animation-delay: 0s;
+}
+.background li:nth-child(6) {
+    left: 79%;
+    animation-delay: 8s;
+}
+.background li:nth-child(7) {
+    left: 69%;
+    animation-delay: 16s;
+}
+.background li:nth-child(8) {
+    left: 79%;
+    animation-delay: 24s;
+}
+
+/* stars */
+.background li:nth-child(9) {
+    left: 15%;
+    animation-delay: 4s;
+}
+.background li:nth-child(10) {
+    left: 90%;
+    animation-delay: 16s;
+}
