@@ -1,6 +1,6 @@
 .cloud {
     position: relative;
-    padding: 0.35rem 1rem;
+    padding: 0.85rem 1rem;
     color: var(--purple-color);
     background: var(--light-color);
     border: none;
@@ -11,15 +11,9 @@
     line-height: 2.188rem;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 500ms cubic-bezier(0.555, 0.645, 0.310, 1);
-    transition-timing-function: cubic-bezier(0.555, 0.645, 0.310, 1);
-}
-
-.cloud:hover,
-.btn-cloud:focus,
-.btn-cloud:active {
-    color: var(--peach-color);
-    border-radius: 45px;
+    animation: floating-text 2s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 .cloud:after {
@@ -64,4 +58,16 @@
     height: 40px;
     transition: all 500ms cubic-bezier(0.555, 0.645, 0.310, 1);
     transition-timing-function: cubic-bezier(0.555, 0.645, 0.310, 1);
+}
+
+@keyframes floating-text {
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
 }
