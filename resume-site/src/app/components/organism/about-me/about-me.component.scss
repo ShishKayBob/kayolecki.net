@@ -39,14 +39,14 @@
     margin: 6rem 1rem;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 580px) {
     .title:after {
         position: relative;
         font-size: 4rem;
         background: rgb(236, 221, 137);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        top: -80px;
+        top: -60px;
         left: -10px;
         content: "\2726";
         text-shadow: none;
@@ -68,5 +68,14 @@
 @media (max-width: 990px) {
     .hero {
         flex-direction: column;
+    }
+
+    .rounded {
+        height: 200px;
+        width: 200px;
+    }
+
+    .title {
+        font-size: 72pt;
     }
 }
