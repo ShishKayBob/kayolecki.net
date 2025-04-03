@@ -18,3 +18,12 @@
     height: 6rem;
     margin: auto;
 }
+
+a {
+    font-family: "GeckoLunch";
+    font-size: 32pt;
+    text-decoration: none;
+    color: var(--peach-color);
+    padding-top: 5px;
+    text-shadow: 5px 5px rgba(0,0,0,0.3);
+}

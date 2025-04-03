@@ -23,8 +23,7 @@
 
 .card-wrapper:hover {
     filter: saturate(1.2);
-    animation: raised 1 linear;
-    
+    transition: all 0.5s ease;
 }
 
 .rounded {
