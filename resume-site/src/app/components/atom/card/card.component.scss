@@ -1,3 +1,13 @@
+@keyframes raised {
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, -4px, 0);
+    }
+    
+}
+
 .card-wrapper {
     max-width: 800px;
     border: 2px solid var(--peach-color);
@@ -9,6 +19,12 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.card-wrapper:hover {
+    filter: saturate(1.2);
+    animation: raised 1 linear;
+    
 }
 
 .rounded {
