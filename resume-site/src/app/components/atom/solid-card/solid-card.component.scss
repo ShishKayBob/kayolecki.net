@@ -1,0 +1,38 @@
+.card-wrapper {
+    max-width: 800px;
+    border: 2px solid var(--ashen-purple-color);
+    border-radius: 25px;
+    padding: 2rem;
+    color: var(--light-color);
+    background: var(--purple-color);
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+h1 {
+    font-family: "GeckoLunch";
+    color: var(--peach-color);
+}
+
+h3 {
+    color: var(--peach-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--light-color);
+}
+
+.card-wrapper:hover {
+    filter: saturate(1.2);
+    transform: translate3d(0, -5px, 0);
+}
+
+.text {
+    font-family: "GeckoLunch";
+    transform: rotate(45deg);
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: -25px;
+}

@@ -41,3 +41,14 @@ a:before {
     content: "\2726";
     text-shadow: none;
 }
+
+
+@media (max-width: 900px) and (min-width: 0px) {
+
+    a {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+    }
+    
+}

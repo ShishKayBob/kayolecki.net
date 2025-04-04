@@ -20,6 +20,23 @@ h3 {
 
 .card {
     margin-bottom: 5rem;
-    max-width: 800px;
     display: inline-block;
+}
+
+.mobile-view-timeline {
+    display: none;
+}
+
+@media (max-width: 900px) and (min-width: 0px) {
+    .mobile-view-timeline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .timeline-wrapper {
+        display: none;
+    }
+    
 }
