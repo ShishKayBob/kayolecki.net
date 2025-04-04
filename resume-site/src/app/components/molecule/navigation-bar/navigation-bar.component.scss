@@ -20,10 +20,24 @@
 }
 
 a {
+    z-index: 2;
     font-family: "GeckoLunch";
     font-size: 32pt;
     text-decoration: none;
     color: var(--peach-color);
     padding-top: 5px;
     text-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+
+a:before {
+    z-index: -2;
+    position: relative;
+    font-size: 2rem;
+    background: rgb(236, 221, 137);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: -21px;
+    left: 17.5px;
+    content: "\2726";
+    text-shadow: none;
 }

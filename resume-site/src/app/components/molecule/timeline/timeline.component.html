@@ -1,13 +1,18 @@
 <div class="timeline-wrapper">
-    <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+    <p-timeline [value]="events" align="alternate">
         <ng-template #marker let-event>
             <span class="marker">
-                <i [class]="event.icon"></i>
+                <i [class]="event.icon" ></i>
             </span>
         </ng-template>
         <ng-template #content let-event>
-            <card [header]="event.title" [subheader]="event.subtitle" [url]="event.img" [desc]="event.desc" [even]="event.even">
+            <div class="card">
+                <card [header]="event.title" [url]="event.img" [desc]="event.desc" [even]="event.even" [chips]="event.chips">
             </card>
+            </div>
+        </ng-template>
+        <ng-template #opposite let-event>
+            <h2>{{event.subtitle}}</h2>
         </ng-template>
     </p-timeline>
 </div>

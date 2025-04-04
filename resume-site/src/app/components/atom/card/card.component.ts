@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { ChipModule } from 'primeng/chip';
 
 @Component({
   selector: 'card',
-  imports: [CommonModule],
+  imports: [CommonModule, ChipModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
@@ -22,5 +23,8 @@ export class CardComponent {
 
   @Input () 
   public even: boolean = false;
+
+  @Input () 
+  public chips: string[] = [];
 
 }

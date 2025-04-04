@@ -1,6 +1,6 @@
 .marker {
     display: flex;
-    background-color: var(--peach-color);
+    background-color: var(--purple-color);
     width: 2rem;
     height: 2rem;
     justify-content: center;
@@ -11,4 +11,15 @@
 .timeline-wrapper {
     margin: auto;
     margin-top: 4rem;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-bottom: 5rem;
+    max-width: 800px;
+    display: inline-block;
 }
