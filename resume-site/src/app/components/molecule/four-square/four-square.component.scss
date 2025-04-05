@@ -8,9 +8,16 @@
 }
 
 @media (max-width: 990px) {
-   .section {
-     display:flex;
-     flex-direction: column;
-   }
+  .section {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+  }
+}
 
+h2 {
+  font-weight: 300;
+  color: var(--light-color);
+  text-align: center;
+  margin: 1rem .25rem;;
 }

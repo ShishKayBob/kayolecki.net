@@ -38,7 +38,7 @@
     color: var(--light-color);
     text-align: center;
     margin: 6rem 1rem;
-    max-width: 1200px
+    max-width: 1200px;
 
 }
 
@@ -80,6 +80,12 @@
 
     .title {
         font-size: 72pt;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
     }
 }
 

@@ -1,11 +1,13 @@
 .landing {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .columns {
     display: flex;
     flex-direction: row;
-    margin: auto;
-    margin-top: 10rem;
+    margin: 3rem auto;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -56,4 +58,24 @@
         opacity: 1;
     }
     
+}
+
+.body {
+    font-weight: 300;
+    color: var(--light-color);
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: floating-text 2s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    max-width: 800px;
+}
+
+@media (min-height: 1100px) {
+    .landing {
+        height: calc(100vh - 328px);
+    }
 }
