@@ -3,7 +3,7 @@ env:
     variables:
         CACHE_CONTROL: "86400"
         S3_BUCKET: "kayolecki.net"
-        BUILD_FOLDER: "dist"
+        BUILD_FOLDER: "dist/browser"
         BUILD_ENV: "configuration production"
 phases:
     install:
