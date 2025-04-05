@@ -59,7 +59,7 @@
     transition-timing-function: cubic-bezier(0.555, 0.645, 0.310, 1);
 }
 
-@media (max-width: 352px) {
+@media (max-width: 362px) {
    .cloud:after, .cloud:before {
      display: none;
    }
@@ -67,5 +67,6 @@
    .cloud {
         font-size: .8rem;
         text-wrap: nowrap;
+        padding: 0.65rem .8rem;
    }
 }
