@@ -2,14 +2,13 @@ version: 0.2
 env:
     variables:
         CACHE_CONTROL: "86400"
-        S3_BUCKET: {-INSERT BUCKET NAME FOR STATIC WEBSITE HERE-}
+        S3_BUCKET: kayolecki-net
         BUILD_FOLDER: dist
         BUILD_ENV: "prod"
 phases:
     install:
         commands:
             - echo Installing source NPM dependencies...
-            - cd resume-site
             - npm install -g @angular/cli@19.0.0
             - npm install 
     build:
