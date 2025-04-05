@@ -1,9 +1,9 @@
 <div class="navbar-wrapper">
     <div class="navbar">
-        <a href="/">K</a>
-        <cloud-button [innerText]="'About Me'" [url]="'/about'"></cloud-button>
-        <cloud-button [innerText]="'Resume/CV'" [url]="'/resume'"></cloud-button>
-        <cloud-button [innerText]="'Projects'" [url]="'/projects'"></cloud-button>
-        <button pButton [icon]="currentIcon" [rounded]="true" [raised]="true" (click)="toggleClouds()"></button>
+        <a href="/" aria-label="Home">K</a>
+        <cloud-button [innerText]="'About Me'" [url]="'/about'" aria-label="About"></cloud-button>
+        <cloud-button [innerText]="'Resume/CV'" [url]="'/resume'" aria-label="Resume"></cloud-button>
+        <cloud-button [innerText]="'Projects'" [url]="'/projects'" aria-label="Projects"></cloud-button>
+        <button pButton [icon]="currentIcon" [rounded]="true" [raised]="true" (click)="toggleClouds()" aria-label="Enabled/Disable Clouds"></button>
     </div>
 </div>
