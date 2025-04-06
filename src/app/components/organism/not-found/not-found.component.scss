@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: calc(100vh - 328px);
+}
+
+.title {
+    font-family: "GeckoLunch";
+    font-size: 96pt;
+    color: var(--peach-color);
+    text-shadow: 10px 10px rgba(0,0,0,0.3);
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: floating-text 2s linear;
+}
+
+.subtitle {
+    font-weight: 300;
+    color: var(--light-color);
+    text-align: center;
+    margin: 6rem 1rem;
+    max-width: 1200px;
+
+}
+
+@media (min-width: 580px) {
+    .title:after {
+        position: relative;
+        font-size: 4rem;
+        background: rgb(236, 221, 137);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        top: -60px;
+        left: -10px;
+        content: "\2726";
+        text-shadow: none;
+    }
+    
+    .title:before {
+        position: relative;
+        font-size: 4rem;
+        background: rgb(236, 221, 137);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        top: 50px;
+        left: 10px;
+        content: "\2726";
+        text-shadow: none;
+    }
+}
