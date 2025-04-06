@@ -8,6 +8,24 @@
     animation: floating-text 2s linear;
 }
 
+.pictures {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.squared {
+    max-width: 300px;
+    margin: 1rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
+}
+
 .about-wrapper {
     margin-top: 3rem;
     display: flex;
@@ -86,6 +104,10 @@
         display: flex;
         flex-direction: column;
         margin: 1rem;
+    }
+
+    .pictures {
+        flex-direction: column;
     }
 }
 
