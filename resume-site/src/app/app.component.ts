@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavigationBarComponent } from './components/molecule/navigation-bar/navigation-bar.component';
 import { HeroComponent } from './components/molecule/hero/hero.component';
 import { BackgroundComponent } from './components/molecule/background/background.component';
+import { CardComponent } from './components/atom/card/card.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { BackgroundComponent } from './components/molecule/background/background
     RouterOutlet,
     NavigationBarComponent,
     BackgroundComponent,
-    HeroComponent
+    HeroComponent,
+    CardComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
