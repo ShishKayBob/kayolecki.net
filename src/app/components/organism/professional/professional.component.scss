@@ -126,7 +126,7 @@
 
     .row {
         flex-direction: column;
-        max-width: 650px;
+
     }
 
     .row:nth-child(even) {
@@ -135,6 +135,10 @@
 
     .link-row {
         flex-direction: column;
+    }
+
+    .center {
+        text-align: center;
     }
 }
 

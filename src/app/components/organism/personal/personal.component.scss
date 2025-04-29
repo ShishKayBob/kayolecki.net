@@ -111,7 +111,6 @@
         content: "\2726";
         text-shadow: none;
     }
-
     
 }
 
@@ -139,6 +138,10 @@
 
     .link-row {
         flex-direction: column;
+    }
+
+    .center {
+        text-align: center;
     }
 }
 
