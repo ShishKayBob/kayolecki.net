@@ -12,10 +12,27 @@
     font-size: 96pt;
     color: var(--peach-color);
     text-shadow: 10px 10px rgba(0,0,0,0.3);
+    animation: floating-text 4s linear;
 }
 
 .subtitle {
     font-family: 'Roboto';
     font-weight: 300;
     color: var(--light-color);
+    animation: floating-text 4s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    margin-top: 0px;
+}
+
+@keyframes floating-text {
+    0%{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
 }
