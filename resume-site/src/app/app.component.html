@@ -1,4 +1,6 @@
-<background></background>
-<navigation-bar></navigation-bar>
-<router-outlet></router-outlet>
-<footer></footer>
+<background [animations]="animations"></background>
+<main>
+    <navigation-bar (clouds)="handleToggle($event)"></navigation-bar>
+    <router-outlet></router-outlet>
+    <footer></footer>
+</main>

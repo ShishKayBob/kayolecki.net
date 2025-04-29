@@ -16,4 +16,10 @@ import { FooterComponent } from './components/molecule/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  public animations: boolean = true;
+
+  public handleToggle(toggle: boolean) {
+    this.animations = toggle;
+  }
 }
