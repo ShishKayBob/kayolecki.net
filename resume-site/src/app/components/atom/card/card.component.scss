@@ -21,3 +21,9 @@
 div {
     min-width: 160px;
 }
+
+@media (max-width: 990px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+}
