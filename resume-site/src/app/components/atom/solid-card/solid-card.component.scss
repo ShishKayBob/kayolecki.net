@@ -1,17 +1,20 @@
 .card-wrapper {
     max-width: 800px;
+    height: 100%;
     border: 2px solid var(--ashen-purple-color);
     border-radius: 25px;
     padding: 2rem;
     color: var(--light-color);
     background: var(--purple-color);
     transition: all 0.5s ease;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
     position: relative;
 }
 
 h1 {
     font-family: "GeckoLunch";
     color: var(--peach-color);
+    text-shadow: 5px 5px rgba(0,0,0,0.3);
 }
 
 h3 {

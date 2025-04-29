@@ -1,6 +1,5 @@
 <div class="section">
-    <card [header]="'Header'" [subheader]="'Subheader'" [desc]="'Description'"></card>
-    <card [header]="'Header'" [subheader]="'Subheader'" [desc]="'Description'"></card>
-    <card [header]="'Header'" [subheader]="'Subheader'" [desc]="'Description'"></card>
-    <card [header]="'Header'" [subheader]="'Subheader'" [desc]="'Description'"></card>
+    @for (panel of panels; track panel) {
+        <solid-card [header]="panel.header" [subheader]="panel.subheader" [body]="panel.body"></solid-card>
+    }
 </div>
