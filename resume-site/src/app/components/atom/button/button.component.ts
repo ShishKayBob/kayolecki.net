@@ -10,4 +10,7 @@ export class ButtonComponent {
   @Input () 
   public innerText: string = '';
 
+  @Input () 
+  public url: string = '';
+
 }
