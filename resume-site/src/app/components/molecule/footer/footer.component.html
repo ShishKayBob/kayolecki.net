@@ -1,7 +1,16 @@
 <div class="footer-wrapper">
     <div class="columns">
-        <p>&copy; Kay Olecki 2025</p>
+        <p>&copy; {{getCurrentYear()}} Kay Olecki</p>
         <div class="line"></div>
-        <p>Contact Me</p>
+        <div>
+            <p class="small-heading">Contact Me</p>
+            <div>
+                <button pButton icon="pi pi-envelope" [rounded]="true"></button>
+                <button pButton icon="pi pi-linkedin" [rounded]="true"></button>
+                <button pButton icon="pi pi-github" [rounded]="true"></button>
+                <button pButton icon="pi pi-hashtag" [rounded]="true"></button>
+            </div>
+        </div>
+        
     </div>
 </div>

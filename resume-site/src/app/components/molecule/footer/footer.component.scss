@@ -10,14 +10,40 @@
 .columns {
     display: flex;
     flex-direction: row; 
-    max-width: 300px;
+    max-width: 600px;
     margin: auto;
-    align-items: center
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .line {
     border-left: 1px solid var(--peach-color);
-    height: 100px;
+    height: 150px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.p-button {
+    background: var(--peach-color);
+    border: 1px solid var(--peach-color);
+    color: var(--light-color);
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.p-button:not(:disabled):hover {
+    background: var(--peach-hover);
+    border: 1px solid var(--peach-hover);
+    color: var(--dark-color);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.small-heading {
+    margin-bottom: 5px;
 }
