@@ -17,6 +17,12 @@ export class NavigationBarComponent {
 
   public currentIcon: string = 'pi pi-cloud';
 
+  ngOnInit() {
+    if (window.innerWidth <= 990) {
+      this.toggleClouds();
+    }
+  }
+
   public getIcon() {
     this.currentIcon = this.currentState ? 'pi pi-cloud' : 'pi pi-moon';
   }
