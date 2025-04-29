@@ -33,7 +33,7 @@ export class ProfessionalComponent {
     {
       title: 'Virtual Reality Training Modules',
       body: 'I was fortunate enough to have an early break into my career in an emerging technology. I designed and developed immersive VR modules for training, education, and simulation experiences using Unity3D and C#. I created interactive 3D environments, user interfaces, and responsive control systems optimized for devices like HTC Vive Pro. I focused on performance optimization, spatial audio integration, and intuitive user interaction design. Collaborated with 3D artists, instructional designers, and product teams to ensure modules met engagement, realism, and user immersion.',
-      img: '',
+      img: '/img/vive controller.jpg',
       caption: ''
     },
   ];
