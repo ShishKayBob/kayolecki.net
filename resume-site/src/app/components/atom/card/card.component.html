@@ -1,5 +1,16 @@
 <div class="card-wrapper">
-    <h3>{{headingText}}</h3>
-    <p>{{bodyText}}</p>
+    <div *ngIf="even">
+        <p>{{desc}}</p>
+    </div>
+    <div>
+      <img *ngIf="url" class="rounded" src="{{url}}"/>
+      <h3>{{header}}</h3>
+      <h5>{{subheader}}</h5>
+    </div>
+    <div *ngIf="!even">
+      <p>{{desc}}</p>
+    </div>
+    
+    
 </div>
 

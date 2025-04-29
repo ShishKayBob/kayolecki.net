@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@use "sass:color";
+@import "primeicons/primeicons.css";
 
 @font-face {
    font-family: 'GeckoLunch';
@@ -11,7 +11,7 @@
    --dark-color: rgb(34,34,59);
    --purple-color: rgba(74, 78, 105);
    --ashen-purple-color: rgba(154, 140, 152);
-   --peach-color: rgba(201, 173, 167);
+   --peach-color: rgb(217, 162, 150);
    --light-color: rgba(242, 233, 228);
    font-family: "Roboto", serif;
    text-rendering: optimizeLegibility;

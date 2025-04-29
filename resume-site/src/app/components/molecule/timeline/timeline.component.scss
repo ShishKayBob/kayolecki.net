@@ -1,0 +1,14 @@
+.marker {
+    display: flex;
+    background-color: var(--peach-color);
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.timeline-wrapper {
+    margin: auto;
+    margin-top: 4rem;
+}
