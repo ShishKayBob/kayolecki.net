@@ -1,1 +1,24 @@
-<p>professional works!</p>
+<div class="projects">
+    <div class="hero">
+        <h1 class="title">Professional</h1>
+        <h2 class="subtitle">QA Tested, PR Approved</h2>
+    </div>
+    <h3 class="disclaimer"><b>Disclaimer:</b> Most of the projects here are under varying NDAs with the companies I have
+        worked with. Their source code and branding are not available for viewing. I can give details about the
+        projects themselves but cannot include any IP or branding associated with the companies. I can include
+        references that can verify my claims upon request.</h3>
+    <div class="column">
+        @for (project of projects; track project) {
+        <div class="row">
+            <div class="text-body">
+                <h3 class="project-title">{{project.title}}</h3>
+                <p class="extra-body">{{project.body}}</p>
+            </div>
+            <div>
+                <img class="sample" src="{{project.img}}"/>
+                <p class="eyebrow">{{project.caption}}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>
