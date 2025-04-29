@@ -5,6 +5,7 @@ import { AboutMeComponent } from './components/organism/about-me/about-me.compon
 import { ProjectsComponent } from './components/organism/projects/projects.component';
 import { NotFoundComponent } from './components/organism/not-found/not-found.component';
 import { ProfessionalComponent } from './components/organism/professional/professional.component';
+import { PersonalComponent } from './components/organism/personal/personal.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: 'about', component: AboutMeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'projects/professional', component: ProfessionalComponent },
+    { path: 'projects/personal', component: PersonalComponent },
     { path: '**', component: NotFoundComponent }
 ];

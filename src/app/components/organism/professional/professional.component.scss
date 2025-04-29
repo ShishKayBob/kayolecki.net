@@ -24,8 +24,18 @@
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    align-items: center;
     margin: 2rem;
-    max-width: 990px
+    max-width: 990px;
+}
+
+.link-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    margin: 2rem;
 }
 
 .row:nth-child(even) {

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Project } from '../../../types/types';
+import { LinkComponent } from '../../atom/link/link.component';
 
 @Component({
   selector: 'app-professional',
-  imports: [CommonModule],
+  imports: [CommonModule, LinkComponent],
   templateUrl: './professional.component.html',
   styleUrl: './professional.component.scss'
 })
@@ -24,14 +25,14 @@ export class ProfessionalComponent {
       caption: 'An example of a scaffolder script running in a terminal.'
     },
     {
-      title: 'Scaling Web Applications',
-      body: '',
-      img: '',
+      title: 'Large Scale Web Apps',
+      body: 'These days most companies have some form of web app. Over most of my professional experiences I have designed, developed, and maintained large-scale web applications supporting thousands of concurrent users. Architected scalable front-end and back-end systems using modern technologies (e.g., Angular, React, Next.js, Node.js, MySQL, AWS). Focused on modular codebases, performance optimization, accessibility, responsive designs and robust testing. Collaborated with cross-functional teams to implement agile workflows, CI/CD pipelines, and proactive monitoring solutions, ensuring 99.9% uptime and a seamless user experience at scale.',
+      img: '/img/computer.png',
       caption: ''
     },
     {
       title: 'Virtual Reality Training Modules',
-      body: '',
+      body: 'I was fortunate enough to have an early break into my career in an emerging technology. I designed and developed immersive VR modules for training, education, and simulation experiences using Unity3D and C#. I created interactive 3D environments, user interfaces, and responsive control systems optimized for devices like HTC Vive Pro. I focused on performance optimization, spatial audio integration, and intuitive user interaction design. Collaborated with 3D artists, instructional designers, and product teams to ensure modules met engagement, realism, and user immersion.',
       img: '',
       caption: ''
     },
