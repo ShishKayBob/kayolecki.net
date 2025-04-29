@@ -3,18 +3,17 @@
         <h1 class="title">Personal</h1>
         <h2 class="subtitle">Passions ignited by need</h2>
     </div>
-    <div class="column">
-        @for (project of projects; track project) {
-        <div class="row">
-            <div class="text-body">
-                <h3 class="project-title">{{project.title}}</h3>
-                <p class="extra-body">{{project.body}}</p>
-            </div>
-            <div>
-                <img class="sample" src="{{project.img}}"/>
-                <p class="eyebrow">{{project.caption}}</p>
-            </div>
+    @for (project of projects; track project) {
+    <div class="row">
+        <div class="text-body">
+            <h3 class="project-title">{{project.title}}</h3>
+            <p class="extra-body">{{project.body}}</p>
+            <arrow-link href="{{project.github}}" text="See Source Code" target="_blank"></arrow-link>
         </div>
-        }
+        <div>
+            <img class="sample" src="{{project.img}}" alt="{{project.alt}}" />
+            <p class="eyebrow">{{project.caption}}</p>
+        </div>
     </div>
+    }
 </div>

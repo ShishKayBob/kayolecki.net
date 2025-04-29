@@ -7,22 +7,20 @@
         worked with. Their source code and branding are not available for viewing. I can give details about the
         projects themselves but cannot include any IP or branding associated with the companies. I can include
         references that can verify my claims upon request.</h3>
-    <div class="column">
-        @for (project of projects; track project) {
-        <div class="row">
-            <div class="text-body">
-                <h3 class="project-title">{{project.title}}</h3>
-                <p class="extra-body">{{project.body}}</p>
-            </div>
-            <div>
-                <img class="sample" src="{{project.img}}"/>
-                <p class="eyebrow">{{project.caption}}</p>
-            </div>
+    @for (project of projects; track project) {
+    <div class="row">
+        <div class="text-body">
+            <h3 class="project-title">{{project.title}}</h3>
+            <p class="extra-body">{{project.body}}</p>
         </div>
-        }
-        <div class="link-row">
-            <h3 class="disclaimer">Are you looking for my more personal projects?</h3>
-            <arrow-link [href]="'/projects/personal'" [text]="'Find Them Here'"></arrow-link>
+        <div>
+            <img class="sample" src="{{project.img}}" alt="{{project.alt}}" />
+            <p class="eyebrow">{{project.caption}}</p>
         </div>
+    </div>
+    }
+    <div class="link-row">
+        <h3 class="disclaimer">Are you looking for my more personal projects?</h3>
+        <arrow-link [href]="'/projects/personal'" [text]="'Find Them Here'"></arrow-link>
     </div>
 </div>

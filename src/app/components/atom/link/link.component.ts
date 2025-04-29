@@ -13,4 +13,7 @@ export class LinkComponent {
 
   @Input()
   public href: string = '/';
+
+  @Input()
+  public target: string = '';
 }
