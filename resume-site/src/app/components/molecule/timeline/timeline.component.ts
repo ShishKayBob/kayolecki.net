@@ -1,20 +1,21 @@
 import { Component } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { CardComponent } from '../../atom/card/card.component';
+import { CommonModule } from '@angular/common';
 
 interface EventItem {
-  title?: string;
-  subtitle?: string;
-  img?: string;
-  chips?: string[];
-  desc?: string;
-  icon?: string;
-  even?: boolean;
+  title: string;
+  subtitle: string;
+  img: string;
+  chips: string[];
+  desc: string;
+  icon: string;
+  even: boolean;
 }
 
 @Component({
   selector: 'app-timeline',
-  imports: [TimelineModule, CardComponent],
+  imports: [TimelineModule, CardComponent, CommonModule],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss'
 })

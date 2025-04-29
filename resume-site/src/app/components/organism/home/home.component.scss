@@ -12,6 +12,7 @@
     animation: floating-text 2s linear forwards;
     animation-delay: 3s;
     opacity: 0;
+    flex-wrap: wrap;
 }
 
 .line {

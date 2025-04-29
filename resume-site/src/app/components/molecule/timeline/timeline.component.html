@@ -16,3 +16,7 @@
         </ng-template>
     </p-timeline>
 </div>
+
+<div class="mobile-view-timeline" *ngFor="let event of events">
+    <card [header]="event.title" [subheader]="event.subtitle" [url]="event.img" [desc]="event.desc" [chips]="event.chips"></card>
+</div>
